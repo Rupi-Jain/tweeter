@@ -1,25 +1,77 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
-html {
+
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: auto;
+  background-color: #8fb0b0;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+.nav {
+  height: 120px;
+  width: 100%;
+  background-color: #589393;
+  color: #FFFF;
+  padding: 1.5em;
+  font-family: 'Bungee', cursive;
+  display: flex;
+  position: fixed;
+  top:0;
+}
+
+.left {
+  width:30%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+}
+.right {
+  width:70%;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  text-align: right;
+  justify-content:flex-end;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.nav-tweet-text{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+.nav-tweet-text:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+ 
+} 
+.error-msgs {
+  height: 100;
+  font-size: 18px;
+  font-weight:bold;
+  color: red;
+  margin-bottom: 20px;
+  display: none;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+} 
