@@ -1,0 +1,71 @@
+.tweet-text {
+  width: 100%;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color:transparent;
+  border-bottom: 5px solid #5e6572;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tweet-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.tweet-btn {
+  background-color: rgb(43, 156, 168);
+  color: #FFFF;
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0 0.04em 0.04em rgba(43, 104, 103, 0.35);
+  transition: all 0.2s;
+}
+.tweet-btn:hover {
+  border-color: rgba(255,255,255,1);
+}
+.new-tweet-footer {
+  display: flex;
+  font-family: 'Bungee', cursive;
+  padding-top: .5em;
+}
+.counter {
+  margin-left: auto; 
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    background-color: #8fb0b0;
+    background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+  }
+  main {
+    flex-direction: column;
+  }
+ }
+ @media only screen and  (min-width: 1024px) {
+  .nav {
+    background-color: #589393;
+    background-image: none;
+  }
+  main {
+    margin-top: 250px;
+    flex-direction: row;
+  }
+  .header {
+    width: 35%;
+    margin-left: 5%;
+    margin-top: revert;
+  }
+  .container {
+    width: 75%;
+   margin-left: 5%;
+   margin-right: 5%;
+   padding-top: revert;
+  }
+}
