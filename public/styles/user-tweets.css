@@ -1,0 +1,51 @@
+.user-tweets {
+  margin-top: 50px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 1em;
+  padding: 10px; 
+}
+.user-tweets:hover {
+  border: 3px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+article {
+  font-size: 18px;
+  font-weight: bold;
+}
+article header {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+article p {
+  margin-top:25px;
+  width: 100%;
+  word-break: break-all;
+  white-space: normal;
+  border-bottom: 3px solid black;
+}
+article footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tweet-images {
+  display: flex;
+  margin-left: auto;
+  justify-content: space-around;
+  padding:5px;
+}
+.tweet-uname {
+  margin-left: 1em;
+}
+.tweet-handle {
+  margin-left: auto;
+}
+.space-in-images {
+  padding:5px;
+}
+.space-in-images:hover {
+  color: red;
+}
